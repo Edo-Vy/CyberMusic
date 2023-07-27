@@ -28,23 +28,24 @@
     <div class="player">
       <div class="wrapper">
         <div class="detail">
-          <div class="now__playing">Playing Music</div>
+          <div class="now__playing"></div>
           <div class="track__art">
-            <img class="track__img" src="./images/TheNights.jpg" />
+            <img class="track__img" src="" />
           </div>
-          <div class="track__name">Avicil</div>
-          <div class="track__artist">Avicil</div>
+          <div class="track__name"></div>
+          <div class="track__artist"></div>
         </div>
         <div class="slider__container">
-          <div class="current__time">00:00</div>
+          <div class="current__time"></div>
           <input
             class="seek__slider"
             type="range"
             min="0"
             max="100"
             value="0"
+            onchange="seekTo()"
           />
-          <div class="total__duration">00:00</div>
+          <div class="total__duration"></div>
         </div>
         <div class="slider__container">
           <i class="fa fa-volume-down"></i>
@@ -54,28 +55,34 @@
             min="0"
             max="100"
             value="0"
+            onchange="setVolume()"
           />
           <i class="fa fa-volume-up"></i>
         </div>
         <div class="buttons">
-          <div class="random__track">
+          <div class="random__track" onclick="getRandomTrack()">
             <i class="fas fa-random fa-1x"></i>
           </div>
-          <div class="prev__track">
+          <div class="prev__track" onclick="getPrevTrack()">
             <i class="fa fa-step-backward fa-1x"></i>
           </div>
-          <div class="playpause__track">
+          <div class="playpause__track" onclick="playOrPauseTrack()">
             <i class="fa fa-play-circle fa-3x"></i>
           </div>
-          <div class="next__track">
+          <div class="next__track" onclick="getNextTrack()">
             <i class="fa fa-step-forward fa-1x"></i>
           </div>
-          <div class="repeat__track">
+          <div class="repeat__track" onclick="repeatTrack()">
             <i class="fa fa-repeat fa-1x"></i>
           </div>
-          <div class="wave">
-            <div class="stroke"></div>
-          </div>
+        </div>
+        <div class="wave">
+          <div class="stroke"></div>
+          <div class="stroke"></div>
+          <div class="stroke"></div>
+          <div class="stroke"></div>
+          <div class="stroke"></div>
+          <div class="stroke"></div>
         </div>
       </div>
     </div>
