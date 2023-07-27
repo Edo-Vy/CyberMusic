@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.player{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(66, 85, 170);
+}
+.wrapper{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 30px;
+   
+}
+.detail{
+   
+}
+.now__playing{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.track__art{
+   
+    width: 200px;
+    height: 200px;
+    padding: 0 15px;
+    margin: 0 40px;
+}
+.track__art img{
+
+    width: 100%;
+    border-radius: 50%;
+}
+.track__name{
+    font-size: 25px;
+}
+.track__artist{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.slider__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.current__time{
+    padding: 0 15px;
+}
+.seek__slider{
+   background: linear-gradient(to right, rgb(107, 60, 60), rgb(23, 115, 51));
+   width: 60%;
+}
+.total__duration{
+    padding: 0 15px;
+}
+.fa{ 
+    padding: 0 15px;
+}
+.volume__slider{
+    background: linear-gradient(to right, rgb(107, 60, 60), rgb(23, 115, 51));
+    width: 30%;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.random__track,
+.repeat__track,
+.playpause__track,
+.next__track,
+.prev__track {
+    /* padding: 25px; */
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.random__track i,
+.repeat__track i,
+.playpause__track i,
+.next__track i,
+.prev__track i {
+    cursor: pointer;
+}
+
+.random__track:hover,
+.repeat__track:hover,
+.playpause__track:hover,
+.next__track:hover,
+.prev__track:hover {
+    opacity: 1;
+}
+.wave{}

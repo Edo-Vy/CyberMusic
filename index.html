@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Music Player</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- font awe -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="wrapper">
+        <div class="detail">
+          <div class="now__playing">Playing Music</div>
+          <div class="track__art">
+            <img class="track__img" src="./images/TheNights.jpg" />
+          </div>
+          <div class="track__name">Avicil</div>
+          <div class="track__artist">Avicil</div>
+        </div>
+        <div class="slider__container">
+          <div class="current__time">00:00</div>
+          <input
+            class="seek__slider"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+          />
+          <div class="total__duration">00:00</div>
+        </div>
+        <div class="slider__container">
+          <i class="fa fa-volume-down"></i>
+          <input
+            class="volume__slider"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+          />
+          <i class="fa fa-volume-up"></i>
+        </div>
+        <div class="buttons">
+          <div class="random__track">
+            <i class="fas fa-random fa-1x"></i>
+          </div>
+          <div class="prev__track">
+            <i class="fa fa-step-backward fa-1x"></i>
+          </div>
+          <div class="playpause__track">
+            <i class="fa fa-play-circle fa-3x"></i>
+          </div>
+          <div class="next__track">
+            <i class="fa fa-step-forward fa-1x"></i>
+          </div>
+          <div class="repeat__track">
+            <i class="fa fa-repeat fa-1x"></i>
+          </div>
+          <div class="wave">
+            <div class="stroke"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
